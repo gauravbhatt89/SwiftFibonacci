@@ -3,6 +3,8 @@ public class fiboSwift
 {
 	static int N = 30;
 	
+	//this function prints the fibonacci series based on the 
+	//constraints we have
 	public static void printFibo(int x)
 	{
 		if(isPrime(x))
@@ -16,7 +18,8 @@ public class fiboSwift
 		else
 			System.out.print(x+" ");
 	}
-	
+
+	// checks if a number is prime or not	
 	private static boolean isPrime(int x) {
 		if (x <= 1)  return false;
 	    if (x <= 3)  return true;
@@ -29,6 +32,7 @@ public class fiboSwift
 		return true;
 	}
 
+	//Function to calcute the next fibonacci number
 	public static void Fibo(int N)
 	{
 		if(N==0)
@@ -57,6 +61,7 @@ public class fiboSwift
 	
 	}
 	
+	// main
 	public static void main(String []args)
 	{
 		Fibo(N);	
